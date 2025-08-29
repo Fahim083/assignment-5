@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css" />
+   
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Joruri seha</title>
   </head>
@@ -17,15 +18,15 @@
         </div>
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-3 bg-[rgba(65,255,107,0.2)] px-3 py-1 rounded-[40px] px-5 py-2">
-            <h1>0</h1>
+           <h1 id="heart-count">0</h1>
             <img src="./assets/heart.png" alt=""  class="w-6 h-6" />
           </div>
          <div class="flex items-center gap-3 bg-[rgba(65,255,107,0.2)] px-3 py-1 rounded-[40px] px-5 py-2">
-            <h1>100</h1>
+            <h1 class="coin-count">100</h1>
             <img src="./assets/coin.png" alt="" srcset="" class="w-6 h-6" />
           </div>
          <div class="flex items-center gap-2 bg-[rgba(0,166,62,1)] px-3 py-1 rounded-[40px] px-5 py-2 text-white">
-            <h1>0</h1>
+            <h1 id="copy-count">0</h1>
             <h1>Copy</h1>
           </div>
         </div>
@@ -61,171 +62,225 @@
  <tr>
     <td colspan=9 >
       <div class="grid grid-cols-3 gap-6">
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
-              <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <h3 class="text-lg font-bold pt-4 ">Fire Service Number</h3>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-     <div class="p-7 bg-white rounded-lg shadow-xl " >
+     <div class="p-7 bg-white rounded-lg shadow-xl card" >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card" >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-     <div class="p-7 bg-white rounded-lg shadow-xl " >
+     <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
-      <div class="p-7 bg-white rounded-lg shadow-xl " >
+      <div class="p-7 bg-white rounded-lg shadow-xl card " >
               <div class="flex justify-between items-center" >
                 <div class="bg-[rgba(223,239,255,1)] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-8 h-8"/>
                 </div>
-                <button>
-                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 heart-button"/>
+                <button class="heart-button">
+                  <img src="./assets/heart-regular-full.svg" alt="" class="w-6 h-6 "/>
                 </button>
               </div>
               <h3 class="text-lg font-bold pt-4">Fire Service Number</h3>
-              <p class="text-md text-gray-400">Fire Service</p>
-              <h2 class="text-xl font-bold pt-5">999</h2>
+              <p class="text-md text-gray-400 card-title">Fire Service</p>
+              <h2 class="text-xl font-bold pt-5 card-number">999</h2>
               <p class="bg-gray-200 text-center py-1 rounded-xl inlink-block w-12">fire</p>
               <div class="flex justify-between items-center pt-5 gap-3"> 
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg"> <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5"> Copy </button>
-                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]"> <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5"> call</button>
+                 <button class="copy-button flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg hover:cursor-pointer"> <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/copy-regular-full.svg" alt="" class="w-5 h-5">  <span> Copy</span> 
+                  </div>  </button>
+                <button class="flex justify-center items-center w-1/2 gap-2 border border-gray-200 py-1 rounded-lg bg-[rgba(0,180,70,1)]  call-button hover:bg-[rgba(0,200,62,1)] hover:cursor-pointer">
+                  <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/phone-solid-full.svg" alt="" class="w-5 h-5">  <span> call</span> 
+                  </div> 
+                </button>
                </div>
       </div>
     </div></td>
     <td colspan=3 valign="top">
-      <div class="ml-6 p-5 bg-white rounded-lg shadow-xl h-[154vh]">
+      <!-- <div class="ml-6 p-5 bg-white rounded-lg shadow-xl h-[154vh]">
         <div class="flex  items-center justify-between pt-3 ">
           <div class="flex gap-2 items-center justify-center">
             <img src="./assets/clock-regular-full.svg" alt="" class="w-7 h-7">
@@ -243,11 +298,27 @@
               <p class="text-sm text-gray-500">11:11:58 AM </p>
           </div>
         </div>
-      </div>
+      </div> -->
+
+
+      <div class="ml-6 p-5 bg-white rounded-lg shadow-xl h-[154vh]">
+  <div class="flex items-center justify-between pt-3">
+    <div class="flex gap-2 items-center justify-center">
+      <img src="./assets/clock-regular-full.svg" alt="" class="w-7 h-7">
+      <p class="text-lg font-semibold">Call History</p>
+    </div>
+    <button id="clear-history" class="text-md font-medium text-center text-white px-6 py-2 rounded-full bg-[rgba(0,166,62,1)]">Clear</button>
+  </div>
+  <div class="call-history mt-3">
+    <!-- call entries will be appended here -->
+  </div>
+</div>
+
     </td>
  </tr>
 </table>
       </div>
     </main>
+     <script src="script.js" defer ></script>
   </body>
 </html>
