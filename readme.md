@@ -1,5 +1,4 @@
 
-
 1 . What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
  
 => By getElementById we find the matching element from html which have the same id
