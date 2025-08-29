@@ -4,34 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Joruri seha</title>
   </head>
   <body>
-    <header>
-      <navber>
-        <div>
-          <img src="./assets/logo.png" alt="" />
-          <h1>Emergency Services</h1>
+    <header class="">
+      <navber class="mx-8 flex justify-between items-center py-5 ">
+        <div class="flex items-center gap-3 ">
+          <img src="./assets/logo.png" alt="logo" class="w-10 h-10" class="w-6 h-6" />
+          <h1 class="text-lg w-12 font-bold">Emergency Services</h1>
         </div>
-        <div>
-          <div>
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-3 bg-[rgba(65,255,107,0.2)] px-3 py-1 rounded-[40px] px-5 py-2">
             <h1>0</h1>
-            <img src="./assets/heart.png" alt="" />
+            <img src="./assets/heart.png" alt=""  class="w-6 h-6" />
           </div>
-          <div>
+         <div class="flex items-center gap-3 bg-[rgba(65,255,107,0.2)] px-3 py-1 rounded-[40px] px-5 py-2">
             <h1>100</h1>
-            <img src="./assets/coin.png" alt="" srcset="" />
+            <img src="./assets/coin.png" alt="" srcset="" class="w-6 h-6" />
           </div>
-          <div>
+         <div class="flex items-center gap-2 bg-[rgba(0,166,62,1)] px-3 py-1 rounded-[40px] px-5 py-2 text-white">
             <h1>0</h1>
             <h1>Copy</h1>
           </div>
         </div>
       </navber>
-      <herobanner>
-        <img src="./assets/ambulance.png" alt="" />
-        <h1>Emergency Service Directory</h1>
+      <herobanner class="text-center herobanner  py-8  flex flex-col items-center gap-4 text-white  ">
+        <img src="./assets/logo.png" alt=""  class="w-20 h-20"/>
+        <h1 class="text-xl font-bold">Emergency Service Directory</h1>
         <p>
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
@@ -52,8 +53,8 @@
               <h2>999</h2>
               <p>fire</p>
               <div> 
-                <button> <img src="./assets/brac.png" alt=""> Copy </button>
-                <button><img src="./assets/coin.png" alt=""> cell</button>
+                <button> <img src="./assets/copy-regular-full.svg" alt=""> Copy </button>
+                <button><img src="./assets/phone-solid-full.svg" alt=""> cell</button>
                </div>
             </td>
             <td></td>
@@ -77,7 +78,7 @@
                 </div>
                 <button>Clear</button>
                 <div>
-                  
+
                 </div>
               </div>
             </td>
